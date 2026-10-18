@@ -12,7 +12,7 @@ Ready-built **PCP3216.DRV**, installation/rollback instructions, checksums and c
 
 [![86Box ColorPlus emulator capture: Windows 3.0 Paintbrush reopening a saved 16-color test image](https://raw.githubusercontent.com/astrobleem/oemdisplay-tandy/ba980d4ccf9092c38ea22b006373f420d0f059e2/docs/pcp/P86_09.PNG)](https://github.com/astrobleem/oemdisplay-tandy/blob/ba980d4ccf9092c38ea22b006373f420d0f059e2/docs/pcp/P86_09.PNG)
 
-86Box 6.0 emulator capture: Paintbrush with the saved and reopened 16-color test image. Original 1368×868 capture of the 320×200 guest mode. [Capture details and recorded checks](https://github.com/astrobleem/oemdisplay-tandy/blob/ba980d4ccf9092c38ea22b006373f420d0f059e2/docs/PCP.MD).
+86Box 6.0 on an emulated IBM XT with Plantronics ColorPlus: Windows 3.0 Paintbrush in 320×200×16. This original 1368×868 emulator capture is linked to the [88/88 test record](https://github.com/astrobleem/oemdisplay-tandy/blob/ba980d4ccf9092c38ea22b006373f420d0f059e2/docs/pcp/P86CHK.JSN), [capture details](https://github.com/astrobleem/oemdisplay-tandy/blob/ba980d4ccf9092c38ea22b006373f420d0f059e2/docs/PCP.MD), and [tested evidence commit ba980d4](https://github.com/astrobleem/oemdisplay-tandy/commit/ba980d4ccf9092c38ea22b006373f420d0f059e2). Emulator evidence only; physical cards and clones remain unqualified.
 
 ### Prerequisites
 
