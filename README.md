@@ -16,7 +16,7 @@ drivers, fonts, grabber, startup artwork and viewport controls.
 4. Start Windows from DOS with `C:\CPPAN\CPWIN`.
 
 These entries use Windows at `C:\WINDOWS`. In the panning display, run
-`C:\CPPAN\XTPAN.EXE` inside Windows for viewport controls.
+`C:\CPPAN\PANCFG` inside Windows once to enable viewport controls.
 Dedicated video RAM needs no reservation helper.
 
 Prefer a ZIP? [Download CPPAN.ZIP](https://raw.githubusercontent.com/astrobleem/oemdisplay-tandy/main/downloads/experimental/CPPAN/CPPAN.ZIP), extract all its files
