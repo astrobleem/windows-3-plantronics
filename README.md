@@ -47,7 +47,7 @@ From plain DOS, use Windows Setup to restore your previous display, or restore
 the previous `display.drv` value. The copied driver is inactive afterward.
 
 [Detailed guide](https://github.com/astrobleem/oemdisplay-tandy/blob/main/experiments/DISPLAY3/PCP3216.TXT) ·
-[Source and test records](https://github.com/astrobleem/oemdisplay-tandy/blob/main/docs/PCP.MD) ·
+[Technical details](https://github.com/astrobleem/oemdisplay-tandy/blob/main/docs/PCP.MD) ·
 [Report a problem](https://github.com/astrobleem/oemdisplay-tandy/issues).
-Optional checksums and component notices are in the download/release.
+Component notices are included in the download.
 This repository is the front door; implementation lives in [oemdisplay-tandy](https://github.com/astrobleem/oemdisplay-tandy).
