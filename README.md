@@ -1,53 +1,35 @@
 # Windows 3.0 on Plantronics ColorPlus
 
-**320x200, 16 colors. [Download PCP3216.ZIP](https://github.com/astrobleem/oemdisplay-tandy/releases/download/experimental-displays-2026-10-12/PCP3216.ZIP)**
+**[Download CPPSET.EXE](https://raw.githubusercontent.com/astrobleem/oemdisplay-tandy/main/downloads/experimental/CPPAN/CPPSET.EXE)**
 
-For IBM PC/XT with Plantronics ColorPlus and 640 KB. Ordinary CGA, PC1512 and
-Tandy/PCjr shared-memory video need different drivers.
-Use an existing Windows 3.0 real-mode installation. The driver is ready built;
-there is no automatic installer or fresh Windows Setup integration.
+For an IBM PC/XT with Plantronics ColorPlus, 640 KB, DOS 3.20+ and an installed
+Windows 3.0 in real mode. Choose a fixed 320x200 sixteen-color desktop or a
+320x400 desktop viewed through a 320x200 screen. The packet includes both
+drivers, fonts, grabber, startup artwork and viewport controls.
 
 ## Install
 
-1. Extract the ZIP to `C:\PCPEXP` and exit Windows completely to DOS.
-2. Copy the driver:
+1. Put CPPSET.EXE on the DOS computer, exit Windows and run `CPPSET`.
+2. Run `C:\CPPAN\INSTALL`.
+3. In Windows Setup choose Display, Other, `C:\CPPAN`, then the fixed
+   **ColorPlus 320x200** or **ColorPlus 320x400 panning** display. Complete Setup.
+4. Start Windows from DOS with `C:\CPPAN\CPWIN`.
 
-   ```bat
-   COPY C:\PCPEXP\PCP3216.DRV C:\WINDOWS\SYSTEM\PCP3216.DRV
-   ```
+These entries use Windows at `C:\WINDOWS`. In the panning display, run
+`C:\CPPAN\XTPAN.EXE` inside Windows for viewport controls.
+Dedicated video RAM needs no reservation helper.
 
-3. In `C:\WINDOWS\SYSTEM.INI`, set the `display.drv` line under `[boot]` to
-   `display.drv=PCP3216.DRV`. Keep the other settings, fonts and grabber.
-4. Start Windows:
+Prefer a ZIP? [Download CPPAN.ZIP](https://raw.githubusercontent.com/astrobleem/oemdisplay-tandy/main/downloads/experimental/CPPAN/CPPAN.ZIP), extract all its files
+to `C:\CPPAN`, then follow step 2. Windows Setup installs the display;
+no manual SYSTEM.INI editing or separate support files are needed.
 
-   ```bat
-   C:
-   CD \WINDOWS
-   WIN /R
-   ```
+Ordinary CGA, PC1512 and Tandy/PCjr shared-memory video use different drivers.
+Native Setup and startup passed in emulation; physical cards and clones are
+unqualified. Wide dialogs can clip at 320 pixels. Windows 3.1 is not supported.
 
-Use your actual Windows directory if different. Dedicated video RAM needs no
-RESERVE/JRGUARD step. Use ordinary Windows startup; the Tandy WINXT launcher
-and palette animation are for other hardware. This packet keeps your existing
-WIN.COM and its startup logo behavior.
+![Windows 3.0 on emulated ColorPlus](https://raw.githubusercontent.com/astrobleem/oemdisplay-tandy/main/docs/pcp/P86_09.PNG)
 
-## Known limits
-
-The driver passed 88/88 final Windows checks in 86Box. The recorded runs used
-an existing AT/EGA installation with EGA fonts/grabber and emulated serial input.
-Physical cards and ColorPlus clones, including ATI Small Wonder, are unqualified.
-Fresh Windows Setup and DOS-box switching are untested. At 320 pixels, wide dialogs can clip.
-Windows 3.1 is not supported.
-
-![Windows 3.0 in the Plantronics ColorPlus emulator](https://raw.githubusercontent.com/astrobleem/oemdisplay-tandy/main/docs/pcp/P86_09.PNG)
-
-## Change back or get help
-
-From plain DOS, use Windows Setup to restore your previous display, or restore
-the previous `display.drv` value. The copied driver is inactive afterward.
-
-[Detailed guide](https://github.com/astrobleem/oemdisplay-tandy/blob/main/experiments/DISPLAY3/PCP3216.TXT) ·
-[Technical details](https://github.com/astrobleem/oemdisplay-tandy/blob/main/docs/PCP.MD) ·
+[Packaged instructions](https://raw.githubusercontent.com/astrobleem/oemdisplay-tandy/main/downloads/experimental/CPPAN/INSTALL.TXT) |
+[Technical details](https://github.com/astrobleem/oemdisplay-tandy/blob/main/docs/PCP.MD) |
 [Report a problem](https://github.com/astrobleem/oemdisplay-tandy/issues).
-Component notices are included in the download.
-This repository is the front door; implementation lives in [oemdisplay-tandy](https://github.com/astrobleem/oemdisplay-tandy).
+Implementation lives in [oemdisplay-tandy](https://github.com/astrobleem/oemdisplay-tandy).
